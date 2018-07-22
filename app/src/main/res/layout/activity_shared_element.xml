@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:id="@+id/relative_layout"
+    android:layout_height="match_parent"
+    tools:context=".SharedElementActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/circular_test"
+        android:padding="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:elevation="4dp"
+        android:background="#f0ce11"
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:transitionName="name"
+        android:layout_centerHorizontal="true"
+        android:text="Naresh Rauniyar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:id="@+id/liner_layout1"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="175dp"
+            android:layout_weight="1"
+            android:transitionName="naresh_logo"
+            app:srcCompat="@drawable/naresh" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="175dp"
+            android:layout_weight="1"
+            android:transitionName="profile_pic"
+            android:padding="5dp"
+            app:srcCompat="@drawable/naresh_new" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liner_layout1"
+        android:layout_centerHorizontal="true"
+        android:text="Hello  Friends \n I this Naresh kumar Rauniyar From Mahrajganj" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:text="Exit Back" />
+</RelativeLayout>
